@@ -16,11 +16,44 @@
     <name>Technology Brewery::Commons::Parent</name>
     <packaging>pom</packaging>
 
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>technologybrewery.org</id>
+            <name>TehcnologyBrewery.org Community</name>
+            <organization>TehcnologyBrewery.org</organization>
+            <organizationUrl>https://technologybrewery.org</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:ssh://git@github.com/TechnologyBrewery/commons.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/TechnologyBrewery/commons.git</developerConnection>
+        <url>https://github.com/TechnologyBrewery/commons/</url>
+    </scm>
+
     <modules>
         <module>shell</module>
         <module>credential</module>
         <module>technology-brewery-commons-json</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencyManagement>
         <dependencies>
