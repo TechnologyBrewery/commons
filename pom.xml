@@ -11,7 +11,7 @@
 
     <groupId>org.technologybrewery.commons</groupId>
     <artifactId>commons-parent</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>Technology Brewery::Commons::Parent</name>
     <packaging>pom</packaging>
 
@@ -36,7 +36,7 @@
         <connection>scm:git:ssh://git@github.com/TechnologyBrewery/commons.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/TechnologyBrewery/commons.git</developerConnection>
         <url>https://github.com/TechnologyBrewery/commons/</url>
-      <tag>commons-parent-1.0.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <modules>
